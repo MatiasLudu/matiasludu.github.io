@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body { 
+            background-image: url(../img/english-background.png); 
+            background-size: 56%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #002240;
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section id="global">
+        <!-- Header -->
+        <header>
+            <nav id="menu">
+                <div id="nameContainer">
+                    <p id="nameLong">Matias Ludueña</p>
+                    <p id="nameShort">ML</p>
+                </div>
+
+                <ul id="list">
+                    <li><a id='target1' class="active" data-text="&lt;HOME&gt;" onclick="goToTop()">&lt;HOME&gt;</a>
+                    </li>
+                    <li><a id='target2' data-text="&lt;ABILITIES&gt;" onclick="goToAbilities()">&lt;ABILITIES&gt;</a>
+                    </li>
+                    <li><a id='target3' data-text="&lt;PROJECTS&gt;" onclick="goToProjects()">&lt;PROJECTS&gt;</a></li>
+                    <li><a id='target4' data-text="&lt;CONTACT&gt;" onclick="goToContact()">&lt;CONTACT&gt;</a></li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">&lt;LANGUAGE&gt;</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../../index.html">SPANISH</a>
+                            <a href="index.html">ENGLISH</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <img id="upArrow" onclick="goToTop()" src="../img/upArrow.png">
+
+        <!-- Page -->
+
+        <button class="switch" id="switch">
+            <span><img src="../img/switch.png" class="switch-image"/></span>
+        </button>
+
+        <div id="home" class="color1">
+            <div id="title">
+                <h1 id="title1">Matias Ludueña</h1>
+                <h2 id="title2">Frontend Developer</h2>
+            </div>
+        </div>
+
+        <div id="abilities" class="color2">
+            <div class="abilities-box">
+                <img class="ability-logo html" src="../img/html.png" alt="html-logo"></img>
+                <img class="ability-logo css" src="../img/css.png" alt="css-logo"></img>
+                <img class="ability-logo sass" src="../img/sass.png" alt="sass-logo"></img>
+                <img class="ability-logo bootstrap" src="../img/bootstrap.png" alt="bootstrap-logo"></img>
+                <img class="ability-logo javascript" src="../img/javascript.png" alt="javascript-logo"></img>
+            </div>
+            <div class="abilities-box">
+                <img class="ability-logo jquery" src="../img/jquery.png" alt="jquery-logo"></img>
+                <img class="ability-logo angular" src="../img/angular.png" alt="angular-logo"></img>
+                <img class="ability-logo typescript" src="../img/typescript.png" alt="typescript-logo"></img>
+                <img class="ability-logo photoshop" src="../img/photoshop.png" alt="photoshop-logo"></img>
+                <img class="ability-logo illustrator" src="../img/illustrator.png" alt="illustrator-logo"></img>
+            </div>
+        </div>
+
+        <div id="projects" class="color1">
+            <div class="projects-row">
+                <div class="project-box">
+                    <div class="project-title">
+                        <p>SEE MORE</p>
+                    </div>
+                    <a href="https://matiasludu-google-clon.netlify.app/" target="_blank">
+                        <img class="project" src="../img/google.jpg" alt="google-clon"></img>
+                    </a>
+
+                </div>
+                <div class="project-box">
+                    <div class="project-title">
+                        <p>SEE MORE</p>
+                    </div>
+                    <a href="https://matiasludu-blog-tecnologia.netlify.app/" target="_blank">
+                        <img class="project" src="../img/tecnologia.jpg" alt="tecnologia"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-row">
+                <div class="project-box">
+                    <div class="project-title">
+                        <p>SEE MORE</p>
+                    </div>
+                    <a href="https://matiasludu-matute-drum-cover.netlify.app" target="_blank">
+                        <img class="project" src="../img/matute.jpg" alt="matute"></img>
+                    </a>
+                </div>
+                <div class="project-box">
+                    <div class="project-title">
+                        <p>SEE MORE</p>
+                    </div>
+                    <a href="https://matiasludu-naturaleza.netlify.app/index.html" target="_blank">
+                        <img class="project" src="../img/naturaleza.jpg" alt="naturaleza"></img>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact" class="color2">
+
+
+            <div class="form-container">
+
+                <form id="form" action="https://formspree.io/f/mjvzajza" method="POST" class="form">
+                    <h2 class="contact-title">CONTACT</h2>
+                    <input name="name" class="form-item" type="text" placeholder="Name" required>
+                    <input name="email" class="form-item" type="email" placeholder="Email" required>
+                    <textarea name="message" class="form-item form-message" placeholder="Message..." rows="5"
+                        required></textarea>
+                    <button class="form-button" type="submit" href="/">Send</button>
+                </form>
+            </div>
+            <div class="form-container2">
+                <a href="https://www.linkedin.com/in/matias-ludue%C3%B1a-679bb4212/" target="_blank">
+                    <img id="linkedin" src="..//img/linkedin.png">
+                </a>
+                <div class="mail-box">
+                    <img id="mailLogo" src="..//img/mail.png">
+                    <p id="mail">matuteldn@gmail.com</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>Made by Matias Ludueña - All rights reserved &copy</p>
+        </footer>
+    </section>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        const $form = document.querySelector('#form');
+
+        $form.addEventListener('submit', handleSubmit);
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const form = new FormData(this);
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok) {
+                this.reset();
+                swal("Message sent", "Thanks for contacting me, i will answer soon.", "success");
+            }
+
+        }
+    </script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>
